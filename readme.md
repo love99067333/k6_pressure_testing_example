@@ -4,7 +4,7 @@
 
 確保已經安裝[k6](https://k6.io/docs/getting-started/installation)
 
-## Test Types
+# Test Types
 並非每種測試都叫做壓力測試，官網上有寫出這些測試的差別和使用情境，這邊簡單介紹一下：
 
 ## Smoke Testing
@@ -26,4 +26,4 @@ Load testing 也稱 Performance testing ，主要是關注當前系統的配置�
 k6 run dir_to/full_test/{testcase}.js
 
 ## 如果要使用grafana+influxdb
-k6 run --out influxdb=http://localhost:8086/k6 dir_to/full_test/{testcase}.js
+k6 run --out influxdb=http://localhost:8086/k6 dir_to/k6_pressure_testing_example/{testcase}.js
